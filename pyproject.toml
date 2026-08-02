@@ -1,0 +1,15 @@
+[project]
+name = "agentdemo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-huggingface>=1.2.2",
+    "langchain-openai>=1.4.1",
+    "langgraph>=1.2.10",
+    "openai>=2.42.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "tavily-python>=0.7.26",
+]
