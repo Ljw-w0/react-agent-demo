@@ -7,6 +7,7 @@ from prompts.prompts import SYSTEM_PROMPT
 
 import asyncio
 import uuid
+import shutil
 
 async def main():
 
@@ -18,7 +19,9 @@ async def main():
         },
     }
 
-    print("\n\n========= Starting agent workflow =========\n\n")
+    width = shutil.get_terminal_size().columns
+
+    print("\n\n" + " Agent Workflow ".center(width, "=") + "\n\n")
 
     while True:
         message = input("Enter your query: ")
